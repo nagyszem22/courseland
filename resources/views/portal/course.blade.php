@@ -61,12 +61,18 @@
 			    	<div class="video-background">
 			    		<iframe src="https://www.youtube.com/embed/{{ $lesson->link }}" frameborder="0" allowfullscreen></iframe>
 			    	</div>
-			    	@endif
 			    	<div class="name">{{ $lesson->name }}</div>
 			    	<div class="description">{{ $lesson->description }}</div>
+			    	@elseif($lesson->type == 'html')
+			    	<div class="text-title">{{ $lesson->name }}</div>
+			    	<div class="text-content">
+			    		{!! $lesson->html !!}
+			    	</div>
+			    	@endif
 			    </div>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="{{ asset('assets/javascript/nano.min.js') }}"></script>
 </body>
 </html>
