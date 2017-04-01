@@ -21,6 +21,6 @@ class courseController extends Controller
     	}
     	$guest = $request->get('guest');
     	$guest->lessons()->syncWithoutDetaching([$lesson->id]);
-    	return view('portal.course', ['course' => Course::find($courseId), 'lesson' => $lesson, 'guest' => $guest]);
+    	return view('portal.course', ['course' => Course::find($courseId), 'lesson' => $lesson, 'guest' => $guest, 'next' => Lesson::where('id', '>', $lesson->id)->min('id')]);
     }
 }

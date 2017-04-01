@@ -25,9 +25,9 @@
 			<a href="{{ url('/') }}" class="menu-item"><span class="icon-home icon"></span>HOME</a>
 			<div class="menu-item scrollto" data-to="about-us" style="border-bottom: 1px solid #ddd"><span class="icon-person icon"></span>ABOUT US</div>
 			<div class="title">COURSES</div>
-			<div class="menu-item course"><span class="icon-ondemand_video icon"></span>FLAPPY BIRD</div>
-			<div class="menu-item course"><span class="icon-chat icon"></span>TETRIS CAR</div>
-			<div class="menu-item course" style="border-bottom: 1px solid #ddd"><span class="icon-chat icon"></span>FROGGER</div>
+			<a href="{{ url('course/1') }}" class="menu-item course"><span class="icon-ondemand_video icon"></span>FLAPPY BIRD</a>
+			<a href="{{ url('course/6') }}" class="menu-item course"><span class="icon-chat icon"></span>TETRIS CAR</a>
+			<a href="{{ url('course/1') }}" class="menu-item course" style="border-bottom: 1px solid #ddd"><span class="icon-chat icon"></span>FROGGER</a>
 		</div>
 	</div>
 	<div class="cover-page">
@@ -47,7 +47,7 @@
 					<div class="course-content">
 						<div class="title">Simple flappy bird game video tutorial</div>
 						<div class="details"><span class="icon-schedule"></span> about 50 mins&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon-network_check"></span> completely beginner</div>
-						<div class="start-button">Let's start! <span class="icon-play_arrow"></span></div>
+						<a href="{{ url('course/1') }}" class="start-button">Let's start! <span class="icon-play_arrow"></span></a>
 					</div>
 				</div>
 				<div class="course-box">
@@ -55,7 +55,7 @@
 					<div class="course-content">
 						<div class="title">Simple tetris car race game text tutorial</div>
 						<div class="details"><span class="icon-schedule"></span> about 40 mins&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon-network_check"></span> first tutorial recommended</div>
-						<div class="start-button">Let's start! <span class="icon-play_arrow"></span></div>
+						<a href="{{ url('course/2') }}" class="start-button">Let's start! <span class="icon-play_arrow"></span></a>
 					</div>
 				</div>
 				<div class="course-box" style="border-bottom: none">
@@ -63,7 +63,7 @@
 					<div class="course-content">
 						<div class="title">Simple frogger text tutorial</div>
 						<div class="details"><span class="icon-schedule"></span> about 50 mins&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon-network_check"></span> first tutorial recommended</div>
-						<div class="start-button">Let's start! <span class="icon-play_arrow"></span></div>
+						<a href="{{ url('course/1') }}" class="start-button">Let's start! <span class="icon-play_arrow"></span></a>
 					</div>
 				</div>
 			</div>

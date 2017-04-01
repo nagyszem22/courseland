@@ -16,7 +16,7 @@
 <body>
 	<div class="topnav">
 		<div class="logo">COURSELAND</div>
-		<div class="menu-button"><span class="icon-menu"></span></div>
+		<div class="menu-button" id="open-menu"><span class="icon-menu" id="open-menu"></span></div>
 	</div>
 	<div class="right-nav">
 		<div class="title">MENU</div>
@@ -25,9 +25,9 @@
 			<a href="{{ url('/') }}" class="menu-item"><span class="icon-home icon"></span>HOME</a>
 			<a href="{{ url('/#about-us') }}" class="menu-item" style="border-bottom: 1px solid #ddd"><span class="icon-person icon"></span>ABOUT US</a>
 			<div class="title">COURSES</div>
-			<div class="menu-item course"><span class="icon-ondemand_video icon"></span>FLAPPY BIRD</div>
-			<div class="menu-item course"><span class="icon-chat icon"></span>TETRIS CAR</div>
-			<div class="menu-item course" style="border-bottom: 1px solid #ddd"><span class="icon-chat icon"></span>FROGGER</div>
+			<a href="{{ url('course/1') }}" class="menu-item course"><span class="icon-ondemand_video icon"></span>FLAPPY BIRD</a>
+			<a href="{{ url('course/6') }}" class="menu-item course"><span class="icon-chat icon"></span>TETRIS CAR</a>
+			<a href="{{ url('course/1') }}" class="menu-item course" style="border-bottom: 1px solid #ddd"><span class="icon-chat icon"></span>FROGGER</a>
 		</div>
 	</div>
 	<div class="leftnav">
@@ -59,16 +59,20 @@
 			    <div class="nano-content">
 			    	@if($lesson->type == 'video')
 			    	<div class="video-background">
-			    		<iframe src="https://www.youtube.com/embed/{{ $lesson->link }}" frameborder="0" allowfullscreen></iframe>
+			    		<iframe src="https://www.youtube.com/embed/{{ $lesson->link }}?autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
 			    	</div>
 			    	<div class="name">{{ $lesson->name }}</div>
 			    	<div class="description">{{ $lesson->description }}</div>
 			    	@elseif($lesson->type == 'html')
 			    	<div class="text-title">{{ $lesson->name }}</div>
 			    	<div class="text-content">
-			    		{!! $lesson->html !!}
+			    		{!! $lesson->html !!}			    	
 			    	</div>
 			    	@endif
+			    	<div class="control-buttons">
+			    		<span class="download-button">Download source <span class="icon-attach_file"></span></span>
+			    		<a class="next-button" href="{{ url('course/'.$course->id.'/'.$next) }}">Next lesson <span class="icon-navigate_next"></span></a>
+			    	</div>
 			    </div>
 			</div>
 		</div>
