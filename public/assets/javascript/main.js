@@ -17,7 +17,10 @@ $(document).on('click', '.scrollto', function(){
 });
 
 $(document).on('scroll', window, function() {
-	var fromTop = $('body,html').scrollTop();
+	var fromTop = $('body').scrollTop();
+	if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+	     var fromTop = $('html').scrollTop();
+	}
 	if (fromTop > 300) {
 		$('.topnav').removeClass('on-cover');
 	} else {

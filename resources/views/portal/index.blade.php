@@ -11,7 +11,7 @@
 	<script type="text/javascript" src="{{ asset('assets/javascript/jquery.min.js') }}"></script>
 	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script type="text/javascript" src="{{ asset('assets/javascript/nano.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('assets/javascript/main.js?v0.1') }}"></script>
+	<script type="text/javascript" src="{{ asset('assets/javascript/main.js?v0.2') }}"></script>
 </head>
 <body>
 	<div class="topnav on-cover">
