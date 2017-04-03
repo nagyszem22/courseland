@@ -78,6 +78,6 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="{{ asset('assets/javascript/main.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('assets/javascript/main.js?v0.1') }}"></script>
 </body>
 </html>

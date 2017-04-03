@@ -3,7 +3,7 @@ $(".nano").nanoScroller({ alwaysVisible: true });
 $(document).ready( function(){
 	var hash = window.location.hash.substr(1);
 	if (hash) {
-		$(document.body).animate({
+		$('body,html').animate({
 		    'scrollTop':   $('#'+hash).offset().top - 60
 		}, 200);
 	}
@@ -11,13 +11,13 @@ $(document).ready( function(){
 
 $(document).on('click', '.scrollto', function(){
 	var hash = $(this).attr('data-to');
-	$(document.body).animate({
+	$('body,html').animate({
 	    'scrollTop':   $('#'+hash).offset().top - 60
 	}, 500);
 });
 
 $(document).on('scroll', window, function() {
-	var fromTop = $('body').scrollTop();
+	var fromTop = $('body,html').scrollTop();
 	if (fromTop > 300) {
 		$('.topnav').removeClass('on-cover');
 	} else {
