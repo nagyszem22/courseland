@@ -55,7 +55,7 @@
 					<div class="course-content">
 						<div class="title">Simple tetris car race game text tutorial</div>
 						<div class="details"><span class="icon-schedule"></span> about 40 mins&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon-network_check"></span> first tutorial recommended</div>
-						<a href="{{ url('course/2') }}" class="start-button">Let's start! <span class="icon-play_arrow"></span></a>
+						<a href="{{ url('course/6') }}" class="start-button">Let's start! <span class="icon-play_arrow"></span></a>
 					</div>
 				</div>
 				<div class="course-box" style="border-bottom: none">
