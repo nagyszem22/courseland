@@ -11,7 +11,6 @@
 	<script type="text/javascript" src="{{ asset('assets/javascript/jquery.min.js') }}"></script>
 	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script type="text/javascript" src="{{ asset('assets/javascript/nano.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('assets/javascript/main.js') }}"></script>
 </head>
 <body>
 	<div class="topnav">
@@ -61,8 +60,10 @@
 			    	<div class="video-background">
 			    		<iframe src="https://www.youtube.com/embed/{{ $lesson->link }}?autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
 			    	</div>
-			    	<div class="name">{{ $lesson->name }}</div>
-			    	<div class="description">{{ $lesson->description }}</div>
+			    	<div class="name" style="{{ $lesson->description == '' ? 'border-bottom: none' : '' }}">{{ $lesson->name }}</div>
+			    	@if($lesson->description != '')
+			    	<div class="description">{!! $lesson->description !!}</div>
+			    	@endif
 			    	@elseif($lesson->type == 'html')
 			    	<div class="text-title">{{ $lesson->name }}</div>
 			    	<div class="text-content">
@@ -77,6 +78,6 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="{{ asset('assets/javascript/nano.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('assets/javascript/main.js') }}"></script>
 </body>
 </html>
