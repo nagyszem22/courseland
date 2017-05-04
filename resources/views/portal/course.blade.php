@@ -8,8 +8,11 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/icons.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/nano.css') }}">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
 	<script type="text/javascript" src="{{ asset('assets/javascript/jquery.min.js') }}"></script>
 	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 	<script type="text/javascript" src="{{ asset('assets/javascript/nano.min.js') }}"></script>
 </head>
 <body>
