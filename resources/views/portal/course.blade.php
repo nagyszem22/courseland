@@ -29,7 +29,7 @@
 			<div class="title">COURSES</div>
 			<a href="{{ url('course/1') }}" class="menu-item course"><span class="icon-ondemand_video icon"></span>FLAPPY BIRD</a>
 			<a href="{{ url('course/6') }}" class="menu-item course"><span class="icon-chat icon"></span>TETRIS CAR</a>
-			<a href="{{ url('course/1') }}" class="menu-item course" style="border-bottom: 1px solid #ddd"><span class="icon-chat icon"></span>FROGGER</a>
+			<a href="{{ url('course/7') }}" class="menu-item course" style="border-bottom: 1px solid #ddd"><span class="icon-chat icon"></span>FROGGER</a>
 		</div>
 	</div>
 	<div class="leftnav">

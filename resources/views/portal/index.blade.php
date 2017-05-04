@@ -27,7 +27,7 @@
 			<div class="title">COURSES</div>
 			<a href="{{ url('course/1') }}" class="menu-item course"><span class="icon-ondemand_video icon"></span>FLAPPY BIRD</a>
 			<a href="{{ url('course/6') }}" class="menu-item course"><span class="icon-chat icon"></span>TETRIS CAR</a>
-			<a href="{{ url('course/1') }}" class="menu-item course" style="border-bottom: 1px solid #ddd"><span class="icon-chat icon"></span>FROGGER</a>
+			<a href="{{ url('course/7') }}" class="menu-item course" style="border-bottom: 1px solid #ddd"><span class="icon-chat icon"></span>FROGGER</a>
 		</div>
 	</div>
 	<div class="cover-page">
@@ -63,7 +63,7 @@
 					<div class="course-content">
 						<div class="title">Simple frogger text tutorial</div>
 						<div class="details"><span class="icon-schedule"></span> about 50 mins&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon-network_check"></span> first tutorial recommended</div>
-						<a href="{{ url('course/1') }}" class="start-button">Let's start! <span class="icon-play_arrow"></span></a>
+						<a href="{{ url('course/7') }}" class="start-button">Let's start! <span class="icon-play_arrow"></span></a>
 					</div>
 				</div>
 			</div>
